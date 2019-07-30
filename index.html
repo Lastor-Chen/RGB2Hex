@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- main CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>RGB2Hex Converter</title>
+</head>
+<body>
+  <div class="container">
+    <div class="frame">
+      <div class="h2 mx-auto text-center">RGB2Hex Converter</div>
+      <div id="bg-color" class="w-50 mx-auto p-5 text-center">
+        <div class="d-inline-block">
+          <div class="slider-group mb-2">
+            <div class="rgb-text">R</div>
+            <input id="r-bar" type="range" min="0" max="255" value="0">
+            <div class="rgb-val">0</div>
+          </div>
+          <div class="slider-group mb-2">
+            <div class="rgb-text">G</div>
+            <input id="g-bar" type="range" min="0" max="255" value="0">
+            <div class="rgb-val">0</div>
+          </div>
+          <div class="slider-group mb-2">
+            <div class="rgb-text">B</div>
+            <input id="b-bar" type="range" min="0" max="255" value="0">
+            <div class="rgb-val">0</div>
+          </div>
+          <div id="hex-code" class="text-center">#000000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <div class="plug-ins">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: url(../image/background.png) no-repeat center;
+  background-size: cover;
+  opacity: .4;
+  box-shadow: inset 0 0 4vw 7vw #fff;
+}
+
+.frame {
+  min-width: 510px;
+  margin: 0 auto;
+  padding: 10vh;
+  border-radius: .25rem;
+  box-shadow: 0px 0px 4px 2px rgba(252, 241, 187, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.h2 {
+  min-width: 400px;
+  /* margin-top: -1em; */
+}
+
+/***********************
+* BG color viewer (JS控制項)
+***********************/
+#bg-color {
+  background-color: #000;
+  min-width: 400px;
+  border-radius: .25rem;
+}
+
+/***********************
+* Slider Bar
+***********************/
+.slider-group {
+  display: flex;
+  justify-content: center;
+}
+
+.rgb-text {
+  width: 1.5rem;
+  margin-right: .4rem;
+  border-radius: .25rem;
+}
+
+.rgb-val {
+  width: 2.5rem;
+  margin-left: .4rem;
+  border-radius: .25rem;
+}
+
+/*#region 操縱桿 */
+.slider-group:nth-child(1) .rgb-text,
+.slider-group:nth-child(1) .rgb-val {
+  background-color: hsl(0, 100%, 65%);
+}
+
+.slider-group:nth-child(2) .rgb-text,
+.slider-group:nth-child(2) .rgb-val {
+  background-color: hsl(120, 100%, 65%);
+}
+
+.slider-group:nth-child(3) .rgb-text,
+.slider-group:nth-child(3) .rgb-val {
+  background-color: hsl(240, 100%, 65%);
+  color: #fff;
+}
+
+[type="range"] {
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: .8rem;
+  height: .8rem;
+  background: linear-gradient(0deg, #ccc, #fff);
+  border: 1px solid hsl(0, 0%, 60%);
+  border-radius: 50%;
+  margin-top: -0.3rem;
+}
+
+[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  background: hsl(0, 0%, 90%);
+  border-radius: .25rem;
+  box-shadow: inset 1px 1px 0 hsl(0, 0%, 50%);
+}
+/*#endregion*/
+
+/***********************
+* Hex code viewer
+***********************/
+#hex-code {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: .25rem;
+  font-size: 1.3rem;
+  line-height: 2em;
+}
