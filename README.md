@@ -9,7 +9,7 @@
 - (實驗)用CSS製作一些背景圖 & UI的簡易特殊效果
 
 ## Background Image Source
-- The soruce of Backoung Image: Pixiv [Link to](https://www.pixiv.net/member_illust.php?mode=medium&illust_id=62288977)
+- The soruce of Background Image from Pixiv [Link to](https://www.pixiv.net/member_illust.php?mode=medium&illust_id=62288977)
 
 ## Usage
 - 直接點擊 [Link to](https://lastor-chen.github.io/RGB2Hex/) 前往該頁面
